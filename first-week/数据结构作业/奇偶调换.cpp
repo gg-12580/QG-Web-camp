@@ -29,7 +29,6 @@ char inputYN()
     getline(cin,str);
     while(str!="Y" && str!="N")
     {
-    	cin.get();
 		cout<<"ÇëÊäÈëY»òÕßN\n";
 		getline(cin,str);
     }
