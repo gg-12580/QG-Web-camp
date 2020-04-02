@@ -57,7 +57,8 @@ struct Node *creat(){
     return head;			//返回头指针 
 }
 //输出链表
-void list(struct Node *p){
+void list(struct Node *p)
+{
 	while (1){
 		cout<<p->num<<endl;
 		if(p->next !=NULL){
