@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="layer">
+        <div class="loginLeft">
+            <h1>来加入我们的团队</h1>
+            <p>开启你的创作之路</p>
+        </div>
+        <div class="loginRight">
+            <div id="login">
+                <p>用户登录</p>
+                <form action="post">
+                    <p>
+                        账户:<input type="text" name="username" value="用户名/手机号" 
+                        style="color:#999" onfocus="if(this.value=='用户名/手机号')
+                        {this.value='';this.style.color='#424242'} " 
+                        onblur="if(this.value=='')
+                        {this.value='用户名/手机号';this.style.color='#999'}">
+                    </p>
+                    <p>
+                        密码:<input type="password" name="word">
+                    </p>
+                    <p>没有账户？<a href="#register">注册</a></p>
+                    <button type="submit">登录</button>
+                </form>
+            </div>  
+            <div id="register">
+                <p>用户注册</p>
+                <form action="post">
+                    <p>
+                        账户:<input type="text" name="username" value="请输入用户名/手机号" 
+                        style="color:#999" onfocus="if(this.value=='请输入用户名/手机号')
+                        {this.value='';this.style.color='#424242'} " 
+                        onblur="if(this.value=='')
+                        {this.value='请输入用户名/手机号';this.style.color='#999'}">
+                    </p>
+                    <p>
+                        密码:<input type="password" name="word" >
+                    </p>
+                    <p><a href="#login">点此登录</a></p>
+                    <button type="submit">注册</button>
+                </form>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>

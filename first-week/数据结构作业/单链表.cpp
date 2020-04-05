@@ -25,8 +25,9 @@ int inputNumber()
 /*判断是否继续*/
 char inputYN()
 {
+	fflush(stdin);
 	string str;
-	cin.get();
+//	cin.get();
 	cout<<"是否继续，请输入Y或者N\n";
     getline(cin,str);
     while(str!="Y" && str!="N")
