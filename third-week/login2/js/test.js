@@ -31,7 +31,6 @@ re_btn.onclick = function () {
         }
     }
 }
-
 lg_btn.onclick = function () {
     let data = {
         username: document.getElementById('uname').value,

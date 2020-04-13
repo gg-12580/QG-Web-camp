@@ -8,11 +8,11 @@ function fnLogin() {
         isError = false;
         return;
     }else if((oUname.value.charCodeAt(0)>=48) && (oUname.value.charCodeAt(0)<=57)){
-        oError.innerHTML = "首字符必须为字母";
+        oError.innerHTML = "用户名首字符必须为字母";
         return;
     }else for(var i=0;i<oUname.value.charCodeAt(i);i++){
         if((oUname.value.charCodeAt(i)<48)||(oUname.value.charCodeAt(i)>57) && (oUname.value.charCodeAt(i)<97)||(oUname.value.charCodeAt(i)>122)){
-            oError.innerHTML = "必须为字母跟数字组成";
+            oError.innerHTML = "用户名必须为字母跟数字组成";
         return;
      }
     }
@@ -21,13 +21,15 @@ function fnLogin() {
         isError = false;
         return;
     }
+    oError.innerHTML = "<br>";
     window.alert("success!");
 }
 function fnSign() {
-    var oUname = document.getElementById("re_name")
+    var oUname = document.getElementById("re_username")
     var oUpass = document.getElementById("re_pass")
     var oUmail = document.getElementById("re_email")
     var oUphone = document.getElementById("re_phone")
+    var oUname2 = document.getElementById("re_name")
     var oError = document.getElementById("error_box1")
     var isError = true;
     if (oUname.value.length > 20 || oUname.value.length < 6) {
@@ -35,11 +37,11 @@ function fnSign() {
         isError = false;
         return;
     }else if((oUname.value.charCodeAt(0)>=48) && (oUname.value.charCodeAt(0)<=57)){
-        oError.innerHTML = "首字符必须为字母";
+        oError.innerHTML = "用户名首字符必须为字母";
         return;
     }else for(var i=0;i<oUname.value.charCodeAt(i);i++){
         if((oUname.value.charCodeAt(i)<48)||(oUname.value.charCodeAt(i)>57) && (oUname.value.charCodeAt(i)<97)||(oUname.value.charCodeAt(i)>122)){
-            oError.innerHTML = "必须为字母跟数字组成";
+            oError.innerHTML = "用户名必须为字母跟数字组成";
         return;
         }
     }
@@ -69,6 +71,24 @@ function fnSign() {
             oError.innerHTML = "请输入正确的手机号码";
         return;
         }
-    } 
+    }
+    if (oUname2.value.length <= 0) {
+        oError.innerHTML = "请输入名字";
+        isError = false;
+        return;
+    }
+    oError.innerHTML = "<br>"; 
     window.alert("success!");
+}
+var lg_bt=document.getElementById('loginB');
+var re_bt=document.getElementById('signB');
+var lg=document.getElementById('login');
+var re=document.getElementById('sign');
+lg_bt.onclick=function(){
+    lg.style.display="block";
+    re.style.display="none";
+}
+re_bt.onclick=function(){
+    re.style.display="block";
+    lg.style.display="none";
 }

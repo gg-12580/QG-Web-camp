@@ -12,18 +12,19 @@
         <div class="container" id="sign">
             <h1 style="color: white; margin: 0; text-align: center">Sign up</h1>
             <form>
-                <label><input id="re_name" type="text" placeholder="Your account"/></label>       
+                <label><input id="re_username" type="text" placeholder="Your account"/></label>       
                 <label><input id="re_pass" type="password" placeholder="password"/></label>
                 <label><input id="re_email" type="text" placeholder="Your email"/></label>
                 <label><input id="re_phone" type="text" placeholder="Your phone"/></label>
+                <label><input class="name" id="re_name" type="text" placeholder="Your name"/></label>
                 <div id="error_box1"><br></div>
                 <input  onclick="fnSign()" id="re" type="submit" value="Sign up"/>
                 <p class="change_link" style="text-align: center">
                     <span class="text">Already a member ?</span>
-                    <a href="#login" class="to_login"> Go and log in </a>
+                    <a href="#login" id="loginB" class="to_login"> Go and log in </a>
                 </p>
             </form>
-        </div>        
+        </div>      
         <ul>
             <li></li>
             <li></li>
@@ -35,20 +36,20 @@
             <li></li>
             <li></li>
             <li></li>
-        </ul>
-        <div id="login" class="container">
+        </ul> 
+        <div id="login" class="container" style="display: none;">
             <h1 style="color: white; margin: 0; text-align: center">Login in</h1>
             <form>
                 <label><input id="uname" type="text" placeholder="Your username"/></label>
                 <label><input id="upass" type="password" placeholder="password"/></label>
                 <div id="error_box2"><br></div>
                 <input onclick="fnLogin()" id="lg" type="submit" value="Log in"/>
-                <p class="change_link" style="text-align: center">
+                <p class="change_link" style="text-align: center">
                     <span class="text">No a member ?</span>
-                    <a href="#sign" class="to_login"> Go and sign up</a>
+                    <a href="#sign" id="signB" class="to_login"> Go and sign up</a>
                 </p>
             </form>
-        </div>           
+        </div>            
     </div>
     <script type="text/javascript" src="js/index.js"></script>
     <!-- <script type="text/javascript" src="js/test.js"></script> -->

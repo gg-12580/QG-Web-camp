@@ -24,18 +24,6 @@ body {
     width: 60%;
     margin: 0 auto;
 }
-#sign:not(:target){
-   opacity: 0;
-}
-#sign:target{
-    opacity: 1;
-}
-#login:not(:target){
-    display: none;
-}
-#login:target{
-   display: block;
-}
 .container h1 {
     text-align: center;
     color: #FFFFFF;
@@ -59,7 +47,8 @@ body {
     font-size: 16px;
     color: #50a3a2;
 }
-.container input[type="password"] {
+.container input[type="password"],
+.container .name{
     margin-bottom: 0;
 }
 #error_box1,
