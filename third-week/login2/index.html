@@ -18,7 +18,7 @@
                 <label><input id="re_phone" type="text" placeholder="Your phone"/></label>
                 <label><input class="name" id="re_name" type="text" placeholder="Your name"/></label>
                 <div id="error_box1"><br></div>
-                <input  onclick="fnSign()" id="re" type="submit" value="Sign up"/>
+                <input  id="re" type="submit" value="Sign up"/>
                 <p class="change_link" style="text-align: center">
                     <span class="text">Already a member ?</span>
                     <a href="#login" id="loginB" class="to_login"> Go and log in </a>
@@ -38,12 +38,12 @@
             <li></li>
         </ul> 
         <div id="login" class="container" style="display: none;">
-            <h1 style="color: white; margin: 0; text-align: center">Login in</h1>
+            <h1 style="color: white; margin: 0; text-align: center">Log in</h1>
             <form>
                 <label><input id="uname" type="text" placeholder="Your username"/></label>
                 <label><input id="upass" type="password" placeholder="password"/></label>
                 <div id="error_box2"><br></div>
-                <input onclick="fnLogin()" id="lg" type="submit" value="Log in"/>
+                <input  id="lg" type="submit" value="Log in"/>
                 <p class="change_link" style="text-align: center">
                     <span class="text">No a member ?</span>
                     <a href="#sign" id="signB" class="to_login"> Go and sign up</a>
@@ -52,6 +52,5 @@
         </div>            
     </div>
     <script type="text/javascript" src="js/index.js"></script>
-    <!-- <script type="text/javascript" src="js/test.js"></script> -->
 </body>
 </html>
